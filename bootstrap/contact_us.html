@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    <link href="favicon (1).ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="contact_us.css">
+</head>
+<body>
+     <!--Header-->
+     <div class="sticky-top">
+        <nav  id="bar1"class="navbar navbar-expand-lg navbar-dark bg-white">
+            <div class="container">
+                <div class="justify-content-start mx-5">
+                    <a href="https://www.dominos.com.au/"><img width="150px" height="70px" src="Screenshot 2023-10-19 204941.jpg" alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse justify-content-center mx-5">
+                    <ul id="menubar"class="navbar-nav">
+                        <li class="nav-item">
+                            <a target="_blank" href="index.html" class="nav-link" id="text" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank"  href="aboutme.html" class="nav-link" id="text" >About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank"  href="contact_us.html" class="nav-link" id="text" >contact-us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_blank"  href="free.html" class="nav-link" id="text" >Freecontent</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="nav-link" href="https://order.dominos.com.au/login">
+                <div class="collapse navbar-collapse justify-content-center mx-1">
+                <img width="30px" height="30px" src="Screenshot 2023-10-19 211107.jpg" alt="">
+                <span id="text" class="mt-">my account</span>
+                </div>
+                </a> 
+                
+            </div>
+        </nav>
+    
+        <nav id="bar2" class="navbar navbar-expand-lg navbar-dark">
+            
+            <div  id="barborder"class="container justify-content-center">
+                <a class="text-decoration-none" href="https://order.dominos.com.au/delivery-address-list"><div id="delivery" class="rounded-start text-white fs-4 py-2 px-5">
+                    <img height="45px" width="45px" src="Screenshot 2023-10-24 110149.jpg" alt="">
+                    Delivery
+                </div>
+            </a>
+            <a class="text-decoration-none" href="https://order.dominos.com.au/store-search">
+                <div id="pickup" class="rounded-end text-white fs-4 py-2 px-5">
+                    <img width="45px" height="45px" src="Screenshot 2023-10-24 110242.jpg" alt="">Pick Up
+                </div>
+            </a>
+            </div>
+    
+        </nav>
+    </div>
+
+    <!--body-->
+    <div class="container text-white my-4">
+        <div id="main">
+        <h1 class="mt-4 mb-4">Contact Us</h1>
+    
+        <form id="contactForm">
+    
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+    
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+    
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+    
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+    
+            <div class="mb-3">
+                <label class="form-label">Gender</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                    <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                    <label class="form-check-label" for="female">Female</label>
+                </div>
+            </div>
+    
+            <div class="mb-3">
+                <label for="religion" class="form-label">Religion</label>
+                <select class="form-select" id="religion" name="religion" required>
+                    <option value="" disabled selected>Select your religion</option>
+                    <option value="christian">Christian</option>
+                    <option value="muslim">Muslim</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="buddhist">Buddhist</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+    
+            <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+            </div>
+    
+            <div class="mb-3">
+                <label class="form-label">Hobbies</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="reading" id="hobbyReading" name="hobbies[]">
+                    <label class="form-check-label" for="hobbyReading">Reading</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="traveling" id="hobbyTraveling" name="hobbies[]">
+                    <label class="form-check-label" for="hobbyTraveling">Traveling</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="sports" id="hobbySports" name="hobbies[]">
+                    <label class="form-check-label" for="hobbySports">Sports</label>
+                </div>
+            </div>
+    
+            <button type="button" class="btn btn-primary" onclick="validateForm()">Save</button>
+        </form>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var form = document.getElementById("contactForm");
+            if (form.checkValidity()) {
+                alert("Form submitted successfully!");
+            } else {
+                alert("Please fill in all the required fields.");
+            }
+        }
+    </script>
+
+    <!--Footer-->
+    <section class="bg-white">
+        <div class="container">
+        <div id="footer1"class="d-flex justify-content-start p-3">
+            <div class="row">
+            <ul>
+                <h6>Domino’s pizza</h6>
+                <li><a class="nav-link font-monospace"href="">Order Online</a></li>
+                <li><a class="nav-link font-monospace"href="">Our Menu</a></li>
+                <li><a class="nav-link font-monospace"href="">Allergen & Nutritional</a></li>
+                <li><a class="nav-link font-monospace"href="">Information</a></li>
+                <li><a class="nav-link font-monospace"href="">Vouchers/Coupons</a></li>
+                <li><a class="nav-link font-monospace"href="">Student Discounts</a></li>
+                <li><a class="nav-link font-monospace"href="">InstaGift</a></li>
+                <li><a class="nav-link font-monospace"href="">Join the VIP Club</a></li>
+                <li><a class="nav-link font-monospace"href="">Domino's App</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h6>Contact Us</h6>
+                <li><a class="nav-link font-monospace"href="">Call 131 888
+                </a></li>
+                <li><a class="nav-link font-monospace"href="">Contact Details</a></li>
+                <li><a class="nav-link font-monospace"href="">Feedback</a></li>
+                <li><a class="nav-link font-monospace"href="">Feed The Knead Program</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h6>Help</h6>
+                <li><a class="nav-link font-monospace"href="">Store Finder</a></li>
+                <li><a class="nav-link font-monospace"href="">Site Map</a></li>
+                <li><a class="nav-link font-monospace"href="">Zero Contact Delivery</a></li>
+                <li><a class="nav-link font-monospace"href="">About Pricing</a></li>
+                <li><a class="nav-link font-monospace"href="">FAQ</a></li>
+                <li><a class="nav-link font-monospace"href="">Scam Alerts</a></li>
+                <li><a class="nav-link font-monospace"href=""></a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <h6>Corporate</h6>
+                <li><a class="nav-link font-monospace"href="">About Us</a></li>
+                <li><a class="nav-link font-monospace"href="">Domino’s Jobs</a></li>
+                <li><a class="nav-link font-monospace"href="">Franchising</a></li>
+                <li><a class="nav-link font-monospace"href="">Investors Site</a></li>
+                
+            </ul>
+        </div>
+        </div>
+    </div>
+    </section>
+    <section class="bg-white">
+        <div id="footer2" class="container">
+            <div class="d-flex justify-content-center gap-4">
+                <a href="https://www.facebook.com/DominosAustralia"><img width="40px" height="40px" src="62594-logo-computer-facebook-icon-icons-free-photo-png.png" alt=""></a>
+                <a href="https://www.youtube.com/user/DominosAustralia"><img width="40px" height="40px" src="youtube.png" alt=""></a>
+                <a href="https://twitter.com/dominos_au"><img width="40px" height="40px" src="twitter.png" alt=""></a>
+                <a href="https://www.instagram.com/dominos_au"><img width="40px" height="40px" src="instagram.png" alt=""></a>
+            </div>
+            <div class="d-flex gap-4 justify-content-center mt-3">
+            <div >
+                <a href="https://apps.apple.com/au/app/dominos/id336882722"><img width="135px" height="45px" src="iosappstore-1.webp" alt=""></a>
+            </div>
+            <div>
+                <a href="https://play.google.com/store/apps/details?id=au.com.dominos.olo.android.app&pli=1"><img width="135px" height="45px" src="newgoogleplay.webp" alt=""></a>
+            </div>
+        </div>
+        <div class="d-flex gap-2 justify-content-center mt-3">
+            <a class="text-decoration-none nav-link" href="https://www.dominos.com.au/about-us/contact-us/privacy-policy"><p class="">Privacy</p></a>
+            |
+            <a class="text-decoration-none nav-link" href="https://www.dominos.com.au/about-us/contact-us/terms-conditions"><p>ONLINE TERMS AND CONDITIONS</p></a>
+        </div>
+        </div>
+    </section>
+</body>
+</html>

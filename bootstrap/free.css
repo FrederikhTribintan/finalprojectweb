@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "EvelethCleanRegular";
+    src: url("Eveleth Clean Regular.otf") format("truetype");
+}
+*{
+    font-family: EvelethCleanRegular ; 
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #454545;
+}
+#delivery{
+    background-color: #006991;
+    height: 69px;
+    width: 380px;
+    
+}
+#pickup{
+    background-color: #e41837;
+    height: 69px;
+    width: 380px;
+}
+
+#text{
+    color: #454545;
+}
+#bar1{
+    height: 70px;
+}
+#bar2{
+    background-color: rgba(0, 0, 0, 50%);
+    height: 92px;
+}
+#foto{
+    margin-left: 120px;
+}
+#conditions a p{
+    font-size: 14px;
+    font-family: sans-serif;
+}
+#terms{
+    background-color: rgba(0, 0, 0, 30%);
+    padding-inline-start: 250px;
+    padding-inline-end: 250px;
+    font-family: sans-serif;
+}
+#termstext p{
+    font-family: sans-serif; 
+}
+#footer1{
+    height: 285px;
+    text-decoration: none;
+    margin: 0 140px;
+}
+
+#footer2{
+    width: 1048px;
+    height: 200px;
+}
